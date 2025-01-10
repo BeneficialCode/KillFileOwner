@@ -57,9 +57,8 @@ BOOL GetFileOwner(LPCWSTR pathName) {
     return FALSE;
 }
 
-int main(){
-    WCHAR file[] = L"D:\\Dev\\cpp\\KillFileOwner\\Debug\\hello.txt";
-    GetFileOwner(file);
+int wmain(int argc,wchar_t* argv[]){
+    GetFileOwner(argv[1]);
     return 0;
 }
 
